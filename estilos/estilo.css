@@ -1,0 +1,43 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/*CONTENEDOR DEL GRID*/
+.contenedor{
+    display: grid; /*Establece el contenedor*/
+    grid-template-columns: 1fr 1fr 1fr ;  /*Crea 3 columnas del mismo tamaño*/
+    grid-template-rows: 150px 180px; /*Son para crear 2 columnas, de 150px de alto*/
+    grid-gap: 20px;  /*Establece un epsacio de 20px entre los elemntos del grid*/
+    padding: 20px;
+}
+/*ELEMENTOS DEL GRID*/
+.item{
+    background: linear-gradient(to left , rgb(26, 26, 40),rgb(70, 80, 94));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+}
+.item1{
+    background: linear-gradient(to left , rgb(26, 26, 40),rgb(70, 80, 94));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: brown;
+    height: 150px;
+}
+/*ELEMENTOS ESPECIFICI*/
+.especial{
+    grid-column: 1/4; /*ocupa dos columas desde la 1 hasta la 3*/
+    grid-row: 2/3; /*Ocupa 1 fila desde las 2 hasta hasta la 3*/
+    background: linear-gradient(to left , rgb(98, 55, 137),rgb(49, 51, 53));
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
